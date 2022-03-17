@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação da API</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        main{
+            width:75vw;
+            margin:3rem auto;
+        }
+
+        .btn{
+            border:none;
+            padding:.4em 1em;
+            border-radius:4px;
+        }
+
+        .btn:hover{
+            cursor:pointer;
+        }
+
+        .btn-get{
+            background-color:dodgerblue;
+            color:white;
+        }
+
+        .btn-post{
+            background-color:rgb(6, 177, 0);
+            color:white;
+        }
+
+        .btn-put{
+            background-color:goldenrod;
+            color:white;
+        }
+
+        .btn-delete{
+            background-color:tomato;
+            color:white;
+        }
+
+        .card{
+            border:2px solid #e1e1e1;
+            border-radius:4px;
+            padding:1em .5em;
+            margin-bottom:1em;
+            margin-top:1em;
+        }
+
+        .endpoint{
+            color:dimgray;
+            font-family:Consolas, 'Courier New', monospace; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Documentação da API</h1>
+        <hr>
+        <div>
+            <h2>Aluno</h2>
+            <div class="card">
+                <span class="btn btn-get">GET</span> <span class="endpoint">/api/v1/alunos</span>
+                <p>Retorna uma lista com todos os alunos cadastrados</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-get">GET</span> <span class="endpoint">/api/v1/alunos/{id}</span>
+                <p>Retorna um aluno baseado no ID</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-post">POST</span> <span class="endpoint">/api/v1/alunos</span>
+                <p>Adiciona um aluno ao banco de dados</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-put">PUT</span> <span class="endpoint">/api/v1/alunos/{id}</span>
+                <p>Atualiza dados de um aluno baseado no ID</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-delete">DELETE</span> <span class="endpoint">/api/v1/alunos/{id}</span>
+                <p>Remove um aluno baseado no ID</p>
+            </div>
+        </div>
+        <div>
+            <h2>Turma</h2>
+            <div class="card">
+                <span class="btn btn-get">GET</span> <span class="endpoint">/api/v1/turmas</span>
+                <p>Retorna uma lista com todas as turmas cadastradas</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-get">GET</span> <span class="endpoint">/api/v1/turmas/{id}</span>
+                <p>Retorna uma turma com base no ID</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-post">POST</span> <span class="endpoint">/api/v1/turmas</span>
+                <p>Adiciona uma turma ao banco de dados</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-put">PUT</span> <span class="endpoint">/api/v1/turmas/{id}</span>
+                <p>Atualiza dados sobre uma turma com base no ID</p>
+            </div>
+            <div class="card">
+                <span class="btn btn-delete">DELETE</span> <span class="endpoint">/api/v1/turmas/{id}</span>
+                <p>Remove uma turma com base no ID</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
