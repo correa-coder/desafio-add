@@ -23,4 +23,4 @@ pip install requests
 ```
 
 # Documentação
-Uma breve descrição das _endpoints_ da API pode ser encontrada no diretório `docs/API endpoints.html` ou online neste link ....
+Uma breve descrição das _endpoints_ da API pode ser encontrada no diretório `docs/API endpoints.html` ou online [neste link](https://correa-coder.github.io/desafio-add/API%20endpoints.html)
